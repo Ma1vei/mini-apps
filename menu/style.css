@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    transition: .3s;
+}
+
+.menu {
+    height: 100%;
+    overflow: hidden;
+    width: 0;
+    background-color: rgb(179, 179, 179);
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    transition: .3s;
+}
+
+
+.menu button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+main button {
+    background-color: white;
+    border: none;
+    padding: 20px;
+    margin: 10px 10px 10px 10px;
+    transition: .3s;
+    background-image: url(img/hamburger.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    transition: .1s;
+}
+
+.opened {
+    width: 250px;
+    overflow: visible;
+}
+
+.visual {
+    visibility: visible;
+    opacity: 1;
+    color: white;
+}
+
+.major {
+    margin-left: 260px;
+}
+
+.none {
+    visibility: hidden;
+    opacity: 0;
+}
